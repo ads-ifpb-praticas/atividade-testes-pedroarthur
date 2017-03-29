@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<dataset>
+    <movie id="1" title="REC" gender="7" duration="120" rented="true"/>
+    <movie id="2" title="The Amazing Spider Man" gender="0" duration="120" rented="false"/>
+    <movie id="3" title="World of Warcraft" gender="1" duration="120" rented="false"/>
+    <movie id="4" title="Sing Street" gender="5" duration="120" rented="true"/>
+</dataset>

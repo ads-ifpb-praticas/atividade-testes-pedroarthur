@@ -1,0 +1,11 @@
+br\edu\ifpb\praticas\atividade\testes\domain\Movie.class
+br\edu\ifpb\praticas\atividade\testes\domain\Gender.class
+br\edu\ifpb\praticas\atividade\testes\dao\RentDAOH2Impl.class
+br\edu\ifpb\praticas\atividade\testes\domain\Rent.class
+br\edu\ifpb\praticas\atividade\testes\dao\RentDAO.class
+br\edu\ifpb\praticas\atividade\testes\validation\MovieValidation.class
+br\edu\ifpb\praticas\atividade\testes\dao\MovieDAO.class
+br\edu\ifpb\praticas\atividade\testes\services\MovieService.class
+br\edu\ifpb\praticas\atividade\testes\dao\MovieDAOH2Impl.class
+br\edu\ifpb\praticas\atividade\testes\services\RentService.class
+br\edu\ifpb\praticas\atividade\testes\exceptions\MovieException.class
