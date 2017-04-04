@@ -5,7 +5,6 @@
  */
 package br.edu.ifpb.praticas.atividade.testes.core.services.impl;
 
-import br.edu.ifpb.praticas.atividade.testes.core.exceptions.EntityNotFoundException;
 import br.edu.ifpb.praticas.atividade.testes.core.dao.interfaces.MovieDAO;
 import br.edu.ifpb.praticas.atividade.testes.core.exceptions.MovieException;
 import br.edu.ifpb.praticas.atividade.testes.core.validation.MovieValidation;
@@ -13,7 +12,6 @@ import br.edu.ifpb.praticas.atividade.testes.shared.domain.Movie;
 import br.edu.ifpb.praticas.atividade.testes.shared.services.interfaces.MovieService;
 import java.util.List;
 import javax.ejb.EJB;
-import javax.ejb.EJBException;
 import javax.ejb.Remote;
 import javax.ejb.Stateless;
 
@@ -41,9 +39,6 @@ public class MovieServiceImpl implements MovieService {
 
     private Movie getById(Long id) {
         Movie movie = movieDAO.get(id);
-        if (movie == null) {
-            throw new EntityNotFoundException("There isn't movie with the id " + id);
-        }
         return movie;
     }
 
