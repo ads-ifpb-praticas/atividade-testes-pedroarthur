@@ -16,6 +16,6 @@ public interface MovieDAO {
 
     void save(Movie movie);
     void update(Movie movie);
-    void remove(Movie movie);
+    Movie get(Long id);
     List<Movie> listAll();
 }

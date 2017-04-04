@@ -1,8 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
 <dataset>
     <movie id="1" title="REC" gender="HORROR" duration="120" rented="true"/>
     <movie id="2" title="The Amazing Spider Man" gender="ACTION" duration="120" rented="false"/>
     <movie id="3" title="World of Warcraft" gender="ADVENTURE" duration="120" rented="false"/>
     <movie id="4" title="Sing Street" gender="DRAMA" duration="120" rented="true"/>
+    
+    <rent id="1" movie_id="1" dataInicio="2017-04-03" dataFim="2017-04-05" state="UP_TO_DATE" />
+    <rent id="2" movie_id="2" dataInicio="2017-04-01" dataFim="2017-04-03" state="FINALIZED" />
+    <rent id="3" movie_id="3" dataInicio="2017-04-01" dataFim="2017-04-03" state="FINALIZED" />
+    <rent id="4" movie_id="4" dataInicio="2017-04-02" dataFim="2017-04-04" state="UP_TO_DATE" />
 </dataset>

@@ -38,5 +38,10 @@ public class RentDAOJpaImpl implements RentDAO {
                 .createQuery("SELECT r FROM Rent r", Rent.class);
         return query.getResultList();
     }
+
+    @Override
+    public void update(Rent rent) {
+        this.entityManager.merge(rent);
+    }
     
 }

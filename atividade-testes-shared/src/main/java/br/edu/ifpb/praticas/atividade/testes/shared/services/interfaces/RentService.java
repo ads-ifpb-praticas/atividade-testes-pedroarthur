@@ -15,5 +15,6 @@ import java.util.List;
 public interface RentService {
     
     void rent(Rent rent);
+    void finalize(Rent rent);
     List<Rent> listAll();
 }

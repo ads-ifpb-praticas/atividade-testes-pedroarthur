@@ -37,15 +37,16 @@ public class MovieDAOJpaImpl implements MovieDAO {
     }
 
     @Override
-    public void remove(Movie movie) {
-        entityManager.remove(movie);
-    }
-
-    @Override
     public List<Movie> listAll() {
         TypedQuery<Movie> query = this.entityManager
                 .createQuery("SELECT m FROM Movie m", Movie.class);
         return query.getResultList();
+    }
+
+    @Override
+    public Movie get(Long id) {
+        Movie found = this.entityManager.find(Movie.class, id);
+        return found;
     }
     
 }
