@@ -14,5 +14,6 @@ import java.util.List;
  */
 public interface RentDAO {
     void save(Rent rent);
+    void update(Rent rent);
     List<Rent> listAll();
 }

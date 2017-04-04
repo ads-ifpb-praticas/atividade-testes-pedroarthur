@@ -22,9 +22,9 @@ public class MovieValidation {
         validateTitle(movie.getTitle()); 
     }
     
-    private void validateTitle(String title) {
+    public void validateTitle(String title) {
         if(title.length() > 50) throw new MovieException("A movie title must contain til 50 characters!");
-        Pattern p = Pattern.compile("^[a-zA-Z0-9!#?]*$");
+        Pattern p = Pattern.compile("^[a-zA-Z0-9!#? \\p{L}]+$");
         Matcher m = p.matcher(title);
         if(!m.matches())
             throw new MovieException("A movie title must contain only #,! or ? as a special character!");
