@@ -23,6 +23,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
  * @author Pedro Arthur
  */
 
+@Ignore
 public class MoviePageTest {
     
     private static WebDriver driver;
