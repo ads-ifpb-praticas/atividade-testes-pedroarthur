@@ -22,7 +22,6 @@ import org.openqa.selenium.chrome.ChromeDriver;
  *
  * @author Pedro Arthur
  */
-
 @Ignore
 public class MoviePageTest {
     
@@ -57,7 +56,9 @@ public class MoviePageTest {
         WebElement movieGender = driver.findElement(By.id("movie-form:gender"));
         WebElement duration = driver.findElement(By.id("movie-form:duration"));
         
-        movieName.sendKeys("Homem Aranha");
+        String movieNameTxt = "Sing Street";
+        
+        movieName.sendKeys(movieNameTxt);
         movieGender.sendKeys("ACTION");
         duration.sendKeys("120");
         
@@ -67,7 +68,7 @@ public class MoviePageTest {
         WebElement alertInfo = driver.findElement(By.className("alert-info"));
         String successMsg = alertInfo.getText();
         
-        assertEquals("O filme Homem Aranha foi cadastrado com sucesso!", successMsg);
+        assertEquals("O filme "+movieNameTxt+" foi cadastrado com sucesso!", successMsg);
         
         driver.manage().deleteAllCookies();
     }
