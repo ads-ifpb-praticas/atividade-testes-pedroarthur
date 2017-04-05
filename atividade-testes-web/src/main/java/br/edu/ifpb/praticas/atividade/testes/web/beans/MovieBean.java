@@ -66,7 +66,7 @@ public class MovieBean implements Serializable {
     public String cancelUpdate() {
         this.movie = new Movie();
         endConversation();
-        return null;
+        return "index.xhtml?faces-redirect=true";
     }
     
     public String updateMovie(Movie movie) {

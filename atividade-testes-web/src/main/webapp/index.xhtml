@@ -61,8 +61,13 @@
                                 
                                 <h:commandButton id="register" rendered="#{!movieBean.isUpdating}" class="btn btn-primary" action="#{movieBean.registerMovie()}" 
                                                  value="Cadastrar"/>
-                                <h:commandButton id="save-changes" rendered="#{movieBean.isUpdating}" class="btn btn-primary" action="#{movieBean.registerMovie()}" 
+                                
+                                <h:panelGroup class="btn-group" rendered="#{movieBean.isUpdating}">
+                                    <h:commandButton id="save-changes"  class="btn btn-primary" action="#{movieBean.registerMovie()}" 
                                                  value="Salvar Alterações"/>
+                                    <h:commandButton id="cancel-changes"  class="btn btn-primary" action="#{movieBean.cancelUpdate()}" 
+                                                 value="Cancelar"/>
+                                </h:panelGroup>
                             </div>
                         </div>
                     </h:form>
