@@ -93,7 +93,7 @@
                                             <td>#{movie.gender.description}</td>
                                             <td>#{movie.duration} minutos</td>
                                             <td>#{movie.rented ? "Alugado" : "Disponível"}</td>
-                                            <td><h:commandButton class="btn btn-primary" value="Editar" action="#{movieBean.updateMovie(movie)}"/></td>
+                                            <td><h:commandButton class="btn btn-primary" rendered="#{!movie.rented}" value="Editar" action="#{movieBean.updateMovie(movie)}"/></td>
                                         </tr>
                                     </ui:repeat>
                                 </tbody>
