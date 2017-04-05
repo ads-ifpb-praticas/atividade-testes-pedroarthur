@@ -5,7 +5,7 @@
  */
 package br.edu.ifpb.praticas.atividade.testes.core.validation;
 
-import br.edu.ifpb.praticas.atividade.testes.core.exceptions.MovieException;
+import br.edu.ifpb.praticas.atividade.testes.shared.exceptions.MovieException;
 import br.edu.ifpb.praticas.atividade.testes.shared.domain.Movie;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;

@@ -12,5 +12,6 @@
     <modules>
     	<module>atividade-testes-shared</module>
     	<module>atividade-testes-core</module>
+        <module>atividade-testes-web</module>
     </modules>
 </project>

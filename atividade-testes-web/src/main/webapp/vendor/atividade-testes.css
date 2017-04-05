@@ -1,0 +1,40 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 04/04/2017, 14:55:48
+    Author     : Pedro Arthur
+*/
+
+.first.section {
+    padding-top: 100px;
+}
+
+.section {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.rents-form .btn {
+    margin-top: 0px;
+}
+
+.btn {
+    margin-top: 10px;
+}
+
+.table-wrapper {
+    margin-top: 50px !important;
+}
+
+.inputs-wrapper {
+    margin-top: 30px;
+}
+
+.no-list-style {
+    list-style: none;
+    padding-left: 0px;
+}
+

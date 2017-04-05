@@ -33,7 +33,11 @@ public class MovieDAOJpaImpl implements MovieDAO {
 
     @Override
     public void update(Movie movie) {
-        entityManager.merge(movie);
+        Movie found = entityManager.find(Movie.class, movie.getId());
+        found.setRented(movie.isRented());
+        found.setDuration(movie.getDuration());
+        found.setTitle(movie.getTitle());
+        found.setGender(movie.getGender());
     }
 
     @Override

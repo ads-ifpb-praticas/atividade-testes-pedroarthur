@@ -91,6 +91,10 @@ public class Rent implements Serializable {
     public void setState(RentState state) {
         this.state = state;
     }
+    
+    public boolean isFinalized() {
+        return this.state.equals(RentState.FINALIZED);
+    }
 
     @Override
     public int hashCode() {

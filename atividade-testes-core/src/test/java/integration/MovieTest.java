@@ -23,12 +23,13 @@ import org.junit.Ignore;
  *
  * @author Pedro Arthur
  */
+
 public class MovieTest extends GenericDatabaseTestCase {
     
     private static EJBContainer container;
     private static Context context;
     
-    private static final String RESOURCE = "java:global/cobertura/MovieServiceImpl!br.edu.ifpb.praticas.atividade.testes.shared.services.interfaces.MovieService";
+    private static final String RESOURCE = "java:global/classes/MovieServiceImpl!br.edu.ifpb.praticas.atividade.testes.shared.services.interfaces.MovieService";
     
     @BeforeClass
     public static void setUpClass() {

@@ -2,7 +2,7 @@ package unit;
 
 
 import br.edu.ifpb.praticas.atividade.testes.core.dao.interfaces.MovieDAO;
-import br.edu.ifpb.praticas.atividade.testes.core.exceptions.MovieException;
+import br.edu.ifpb.praticas.atividade.testes.shared.exceptions.MovieException;
 import br.edu.ifpb.praticas.atividade.testes.core.services.impl.MovieServiceImpl;
 import br.edu.ifpb.praticas.atividade.testes.core.validation.MovieValidation;
 import br.edu.ifpb.praticas.atividade.testes.shared.domain.Gender;

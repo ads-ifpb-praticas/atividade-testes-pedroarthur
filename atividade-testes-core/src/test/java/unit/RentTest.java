@@ -5,8 +5,9 @@
  */
 package unit;
 import br.edu.ifpb.praticas.atividade.testes.core.dao.impl.RentDAOJpaImpl;
+import br.edu.ifpb.praticas.atividade.testes.core.dao.interfaces.MovieDAO;
 import br.edu.ifpb.praticas.atividade.testes.core.dao.interfaces.RentDAO;
-import br.edu.ifpb.praticas.atividade.testes.core.exceptions.RentException;
+import br.edu.ifpb.praticas.atividade.testes.shared.exceptions.RentException;
 import br.edu.ifpb.praticas.atividade.testes.core.services.impl.RentServiceImpl;
 import br.edu.ifpb.praticas.atividade.testes.shared.domain.Gender;
 import br.edu.ifpb.praticas.atividade.testes.shared.domain.Movie;
@@ -33,17 +34,19 @@ import org.mockito.MockitoAnnotations;
 public class RentTest {
     
     private RentDAO rentDAO;
+    private MovieDAO movieDAO;
     private RentServiceImpl rentService;
     
     @Before
     public void setUp() {
         //init mocks
         MockitoAnnotations.initMocks(this);
-        rentDAO = Mockito.mock(RentDAO.class);
+        this.rentDAO = Mockito.mock(RentDAO.class);
+        this.movieDAO = Mockito.mock(MovieDAO.class);
         
-        this.rentService = new RentServiceImpl();
-        rentService.setRentDAO(rentDAO);
+        this.rentService = new RentServiceImpl(rentDAO, movieDAO);
         
+        doNothing().when(movieDAO).update(any(Movie.class));
         doNothing().when(rentDAO).save(any(Rent.class));
         doNothing().when(rentDAO).update(any(Rent.class));
         doReturn(mockedListAll()).when(rentDAO).listAll();
