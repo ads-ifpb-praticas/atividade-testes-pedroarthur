@@ -1,8 +1,5 @@
 language: java
 jdk: 
   oraclejdk8
-branches:
-  only:
-    bDevelop
-install: mvn package
+install: mvn install
 script: mvn test
