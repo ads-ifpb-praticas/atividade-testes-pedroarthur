@@ -1,7 +1,5 @@
 language: java
 jdk: 
   oraclejdk8
-branches:
-  only:
-    - /^v.*$/
-script: mvn install
+install: mvn install -DskipTests=true
+script: mvn integration-test verify
