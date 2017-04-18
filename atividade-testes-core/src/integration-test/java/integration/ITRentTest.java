@@ -28,7 +28,7 @@ import org.junit.Test;
  */
 
 @Ignore
-public class RentTest extends GenericDatabaseTestCase {
+public class ITRentTest extends GenericDatabaseTestCase {
     
     private static EJBContainer container;
     private static Context context;

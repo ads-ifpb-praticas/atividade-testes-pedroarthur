@@ -24,7 +24,7 @@ import org.junit.Ignore;
  * @author Pedro Arthur
  */
 
-public class MovieTest extends GenericDatabaseTestCase {
+public class ITMovieTest extends GenericDatabaseTestCase {
     
     private static EJBContainer container;
     private static Context context;
